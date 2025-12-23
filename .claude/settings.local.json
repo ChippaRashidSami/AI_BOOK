@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/create-new-feature.ps1\" -Json \"$ARGUMENTS\" -Number 1 -ShortName \"ros2-robotics-module\" \"Module 1: The Robotic Nervous System (ROS 2)\nTarget audience: AI engineers and robotics students entering humanoid robot control\nFocus: ROS 2 as the middleware enabling communication, control, and embodiment of humanoid robots.\nChapters:\n1. ROS 2 Foundations: Nodes, Topics, and Services\n2. Python Agents and ROS Control with rclpy\n3. Humanoid Modeling with URDF\nSuccess criteria:\n- Reader can explain ROS 2''s role as a robotic nervous system\n- Reader understands node-based communication patterns\n- Reader can describe how URDF defines humanoid structure\nConstraints:\n- Format: Docusaurus Markdown\n- Length: ~1,500–2,000 words total\n- Clear diagrams and conceptual explanations\n- No hardware-specific setup instructions\nNot building:\n- Full ROS 2 installation guide\n- Real robot deployment steps\n- Advanced ROS security or DDS tuning\")",
+      "Bash(git checkout -b 001-ros2-robotics-module)",
+      "Bash(git checkout -b 003-ai-robot-brain)",
+      "Bash(git checkout -b 004-vla-integration)",
+      "Bash(npx create-docusaurus@latest . humanoid-docs classic --typescript=js --package-manager=npm --skip-install)",
+      "Bash(npx create-docusaurus@latest humanoid-docs classic --package-manager=npm --skip-install)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json)",
+      "SlashCommand(/sp.tasks)",
+      "Bash(npm install)"
+    ]
+  }
+}

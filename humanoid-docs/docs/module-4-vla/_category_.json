@@ -1,0 +1,8 @@
+{
+  "label": "Module 4: Vision-Language-Action (VLA) Capstone",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Connecting perception, language, and action in humanoid robots with voice-to-action, LLM planning, and autonomous operation. This capstone module integrates all concepts from previous modules to create complete autonomous humanoid systems."
+  }
+}
