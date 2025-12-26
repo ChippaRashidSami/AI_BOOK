@@ -20,10 +20,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io', // GitHub Pages URL
+  url: 'https://hackathon-qecw.vercel.app/', // GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/hack/', // Adjust to your repository name
+  baseUrl: '/', // Adjust to your repository name
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
